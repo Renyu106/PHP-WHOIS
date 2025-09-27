@@ -14,7 +14,7 @@ $WHOIS->FIND_WHOIS_SERVER("kr");
 // 해당 TLD의 후이즈 서버를 IANA 웹사이트에서 찾은후 설정파일에 추가합니다
 // 만약 설정파일에 이미 해당 TLD에 대한 후이즈 정보가 있다면 추가를 안합니다
 
-$WHOIS->WHOIS("renyu.ac.kr");
+$WHOIS->WHOIS("test-domain.kr");
 // 도메인의 WHOIS 정보를 Lookup합니다
 
 $WHOIS->IP_INFO("1.1.1.1");
@@ -30,7 +30,7 @@ RETURN할때는 ARRAY 형태로 RETURN합니다
 
 ### CALL
 ```php
-$WHOIS->WHOIS("renyu.ac.kr")
+$WHOIS->WHOIS("test-domain.kr")
 ```
 
 ### RETURN (ARRAY TO JSON)
@@ -38,9 +38,9 @@ $WHOIS->WHOIS("renyu.ac.kr")
 {
   "STATUS": "OK",
   "MSG": "WHOIS SERVER FOUND",
-  "DOMAIN": "renyu.ac.kr",
+  "DOMAIN": "test-domain.kr",
   "WHOIS_SERVER": "whois.nic.or.kr",
-  "RESULT": "query : renyu.ac.kr\n\n\n# KOREAN(UTF8)\n\n도메인이름 : renyu.ac.kr\n등록인 : Domain Privacy Services\n책임자 : Domain Privacy Services\n책임자 전자우편 : DomainPrivacy@HOSTING.KR\n등록일 : 2023. 03. 31.\n최근 정보 변경일 : 2023. 04. 24.\n사용 종료일 : 2025. 03. 31.\n정보공개여부 : N\n등록대행자 : 메가존(주)(http://HOSTING.KR)\nDNSSEC : 미서명\n등록정보 보호 : clientTransferProhibited\n\n1차 네임서버 정보\n 호스트이름 : brett.ns.cloudflare.com\n\n2차 네임서버 정보\n 호스트이름 : liberty.ns.cloudflare.com\n\n네임서버 이름이 .kr이 아닌 경우는 IP주소가 보이지 않습니다.\n\n\n# ENGLISH\n\nDomain Name : renyu.ac.kr\nRegistrant : Domain Privacy Services\nAdministrative Contact(AC) : Domain Privacy Services\nAC E-Mail : DomainPrivacy@HOSTING.KR\nRegistered Date : 2023. 03. 31.\nLast Updated Date : 2023. 04. 24.\nExpiration Date : 2025. 03. 31.\nPublishes : N\nAuthorized Agency : Megazone(http://HOSTING.KR)\nDNSSEC : unsigned\nDomain Status : clientTransferProhibited\n\nPrimary Name Server\n Host Name : brett.ns.cloudflare.com\n\nSecondary Name Server\n Host Name : liberty.ns.cloudflare.com\n\n\n- KISA/KRNIC WHOIS Service -\n\n"
+  "RESULT": "query : test-domain.kr\n\n\n# KOREAN(UTF8)\n\n도메인이름 : test-domain.kr\n등록인 : Domain Privacy Services\n책임자 : Domain Privacy Services\n책임자 전자우편 : DomainPrivacy@HOSTING.KR\n등록일 : 2023. 03. 31.\n최근 정보 변경일 : 2023. 04. 24.\n사용 종료일 : 2025. 03. 31.\n정보공개여부 : N\n등록대행자 : 메가존(주)(http://HOSTING.KR)\nDNSSEC : 미서명\n등록정보 보호 : clientTransferProhibited\n\n1차 네임서버 정보\n 호스트이름 : brett.ns.cloudflare.com\n\n2차 네임서버 정보\n 호스트이름 : liberty.ns.cloudflare.com\n\n네임서버 이름이 .kr이 아닌 경우는 IP주소가 보이지 않습니다.\n\n\n# ENGLISH\n\nDomain Name : test-domain.kr\nRegistrant : Domain Privacy Services\nAdministrative Contact(AC) : Domain Privacy Services\nAC E-Mail : DomainPrivacy@HOSTING.KR\nRegistered Date : 2023. 03. 31.\nLast Updated Date : 2023. 04. 24.\nExpiration Date : 2025. 03. 31.\nPublishes : N\nAuthorized Agency : Megazone(http://HOSTING.KR)\nDNSSEC : unsigned\nDomain Status : clientTransferProhibited\n\nPrimary Name Server\n Host Name : brett.ns.cloudflare.com\n\nSecondary Name Server\n Host Name : liberty.ns.cloudflare.com\n\n\n- KISA/KRNIC WHOIS Service -\n\n"
 }
 ```
 
